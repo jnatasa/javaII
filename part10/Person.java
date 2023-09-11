@@ -1,28 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
-
-
+/**
+ *
+ * @author integ
+ */
 public class Person {
+    private String name;
+    private Education education;
 
-    private String firstName;
-    private String lastName;
-    private int birthYear;
-
-    public Person(String firstName, String lastName, int birthYear) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.birthYear = birthYear;
+    public Person(String name, Education education) {
+        this.name = name;
+        this.education = education;
     }
 
-    public String getFirstName() {
-        return firstName;
+    
+    
+    public Education getEducation(){
+        
+        return this.education;
     }
-
-    public String getLastName() {
-        return lastName;
+    
+    public String toString(){
+        
+        
+        return this.name + ", " + this.education;
     }
-
-    public int getBirthYear() {
-        return birthYear;
-    }
-
 }
